@@ -1,16 +1,16 @@
 # 🎬 YouTube Transcript Summarizer with Gemini + LangChain
 
-This project is an AI-powered agent that extracts transcripts from YouTube videos and summarizes them using Google's Gemini (via LangChain). It uses the Whisper model for audio transcription and Playwright for web automation.
-
+This is a powerful AI-driven command-line tool that extracts transcripts from YouTube videos and generates intelligent summaries using Google Gemini via LangChain. It utilizes the Whisper model for high-quality audio transcription and Modular Control Protocol (MCP) for structured task execution.
 ---
 
 ## 🚀 Features
 
-- Extracts transcript from any YouTube video
-- Summarizes video content using Gemini AI (Generative Language API)
-- Fully automated workflow with LangChain tools
-- Whisper model integration for accurate transcription
-- Command-line interface (CLI) for simple use
+- 🎥 Extracts audio transcript from YouTube videos using Whisper
+- ✨ Summarizes content using Gemini (via LangChain)
+- 🧠 LangChain agent handles multi-step logic and decision-making
+- 💬 Clean terminal-based interface (no browser or GUI required)
+- 🧩 Modular Control Protocol (MCP) based tool design
+- 💻 Works on any platform with Python support
 
 ---
 
@@ -66,7 +66,7 @@ Note: This project uses the Whisper model to transcribe YouTube audio into text.
 
 Install ffmpeg:
 ```
-Windows: Download here(https://ffmpeg.org/download.html)
+# Download from https://ffmpeg.org/download.html and add to PATH
 
 macOS: brew install ffmpeg
 
@@ -80,7 +80,7 @@ The app opens the video in the browser.
 
 It uses Whisper to extract the transcript from the audio.
 
-LangChain agent sends the transcript to Gemini for summarization.
+LangChain + Gemini AI summarizes the content intelligently.
 
 The final summary is shown in your terminal.
 
@@ -96,11 +96,12 @@ You'll be prompted to enter a YouTube video URL. The system will handle the rest
 langchain
 openai
 google-generativeai
-playwright
-pytube
+yt-dlp
 whisper
 gradio
 python-dotenv
+youtube-transcript-api
+
 ```
 
 To install all dependencies:
