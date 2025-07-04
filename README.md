@@ -51,7 +51,6 @@ source venv/bin/activate
 ```
 ### 3️⃣ Install Dependencies
 ```bash
-Copy code
 pip install -r requirements.txt
 ```
 ### 4️⃣ Setup Environment Variables
@@ -67,7 +66,7 @@ Note: This project uses the Whisper model to transcribe YouTube audio into text.
 
 Install ffmpeg:
 ```
-Windows: Download here
+Windows: Download here(https://ffmpeg.org/download.html)
 
 macOS: brew install ffmpeg
 
@@ -88,11 +87,12 @@ The final summary is shown in your terminal.
 ### ▶️ Run the Agent
 ```bash
 python agent.py
-You'll be prompted to enter a YouTube video URL. The system will handle the rest.
 ```
+You'll be prompted to enter a YouTube video URL. The system will handle the rest.
+
 
 ### 🧾 requirements.txt
-```nginx
+```
 langchain
 openai
 google-generativeai
@@ -106,9 +106,9 @@ python-dotenv
 To install all dependencies:
 
 ```bash
-
 pip install -r requirements.txt
 ```
+
 📄 License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute.
 
