@@ -1,5 +1,5 @@
-# 🎬 YouTube Transcript Summarizer with Gemini + LangChain
-
+## 🎬 YouTube Transcript Summarizer with Gemini + LangChain
+---
 This is a powerful AI-driven command-line tool that extracts transcripts from YouTube videos and generates intelligent summaries using Google Gemini via LangChain. It utilizes the Whisper model for high-quality audio transcription and Modular Control Protocol (MCP) for structured task execution.
 ---
 
