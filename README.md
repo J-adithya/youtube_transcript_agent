@@ -16,18 +16,7 @@ This project is an AI-powered agent that extracts transcripts from YouTube video
 
 ## 📁 Folder Structure
 
-youtube-transcript-generator/
-├── agent.py # Main CLI script to run the agent
-├── .env # Contains your Gemini API Key
-├── requirements.txt # Python dependencies
-├── my_mcp_server/
-│ ├── main_server.py # (Optional) MCP-compatible tool server (not required for basic usage)
-│ └── tools/
-│ ├── extract_transcript.py
-│ ├── summarize_text.py
-│ └── navigate_to_url.py
-└── venv/ # Your Python virtual environment
-
+Follow the same structure as this repository
 
 ---
 
@@ -48,9 +37,9 @@ youtube-transcript-generator/
 ```bash
 git clone https://github.com/your-username/youtube-transcript-generator.git
 cd youtube-transcript-generator
-2️⃣ Create and Activate Virtual Environment
-bash
-Copy code
+```
+### 2️⃣ Create and Activate Virtual Environment
+```bash
 # Create a virtual environment
 python -m venv venv
 
@@ -59,28 +48,31 @@ venv\Scripts\activate
 
 # Activate on macOS/Linux
 source venv/bin/activate
-3️⃣ Install Dependencies
-bash
+```
+### 3️⃣ Install Dependencies
+```bash
 Copy code
 pip install -r requirements.txt
-4️⃣ Setup Environment Variables
+```
+### 4️⃣ Setup Environment Variables
 Create a .env file in the root directory with the following content:
 
-env
-Copy code
+```env
 GOOGLE_API_KEY=your-gemini-api-key-here
 GEMINI_MODEL=gemini-1.5-flash
+```
 You can get your Gemini API key from Google AI Studio or the Google Cloud Console.
 
 Note: This project uses the Whisper model to transcribe YouTube audio into text. Make sure your system has ffmpeg installed, as Whisper requires it to process audio files.
 
 Install ffmpeg:
-
+```
 Windows: Download here
 
 macOS: brew install ffmpeg
 
 Linux (Debian): sudo apt install ffmpeg
+```
 
 🧠 How It Works
 You provide a YouTube URL.
@@ -93,15 +85,14 @@ LangChain agent sends the transcript to Gemini for summarization.
 
 The final summary is shown in your terminal.
 
-▶️ Run the Agent
-bash
-Copy code
+### ▶️ Run the Agent
+```bash
 python agent.py
 You'll be prompted to enter a YouTube video URL. The system will handle the rest.
+```
 
-🧾 requirements.txt
-nginx
-Copy code
+### 🧾 requirements.txt
+```nginx
 langchain
 openai
 google-generativeai
@@ -110,11 +101,14 @@ pytube
 whisper
 gradio
 python-dotenv
+```
+
 To install all dependencies:
 
-bash
-Copy code
+```bash
+
 pip install -r requirements.txt
+```
 📄 License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute.
 
