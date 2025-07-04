@@ -3,3 +3,4 @@ langchain-google-genai
 youtube-transcript-api
 mcp
 python-dotenv
+whisper
