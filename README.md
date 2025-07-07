@@ -99,7 +99,6 @@ openai
 google-generativeai
 yt-dlp
 whisper
-gradio
 python-dotenv
 youtube-transcript-api
 
